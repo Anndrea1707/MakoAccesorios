@@ -1,0 +1,529 @@
+:root {
+    /*COLORES*/
+    --pink: rgb(255, 148, 223);
+    --purple: #d493ff;
+    --black: #111111;
+    --white: #ffffff;
+    --fondo: rgb(233, 233, 233);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.7em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-family: 'Acme', sans-serif;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: 1.8px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    color: var(--black);
+    background-color: var(--purple);
+}
+
+button:hover {
+    background-color: #c375f7;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/*HEADER*/
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background-color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 3px 3px 5px #00000050;
+    ;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.container img {
+    padding: 0;
+    height: 85px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 60px;
+}
+
+nav a:hover {
+    color: #a73af0;
+}
+
+/*PAGINA INICIO*/
+/*SECTION FOTO*/
+#photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: var(--white);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("/Assets/fondo_accesorios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#photo h1 {
+    font-family: 'Acme', sans-serif;
+}
+
+/*SECTION PRODUCTOS NUEVOS*/
+
+.cards {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 70px;
+}
+
+.line {
+    background-color: #131313;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+.card-description {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.card-new {
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.card-new img {
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #c7c7c7;
+}
+
+.card-link {
+    margin-bottom: 20px;
+    justify-items: center;
+}
+
+/*SECCION PROMOCIONES*/
+
+.Tittle-new {
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tarjetas {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.tarjetas .card {
+    width: 330px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.tarjetas .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjetas .card img {
+    width: 330px;
+    height: 220px;
+}
+
+
+.tarjetas .card h4 {
+    color: #581386;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 0;
+    background-color: #ffa7ff9d;
+    width: 200px;
+    border-radius: 8px;
+    margin-left: 65px;
+}
+
+.tarjetas .card p {
+    padding: 0 1rem;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/*SECTION FOOTER*/
+.pie {
+    background-color: #ebebebbd;
+    margin-top: 35px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 100px;
+}
+
+.logo-footer p {
+    font-size: 1.5em;
+    font-family: 'Acme' sans-serif;
+    font-weight: bold;
+}
+
+.foter {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: end;
+}
+
+.iconos a {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    gap: 8px;
+    font-weight: 600;
+    font-family: 'Signika Negative' sans-serif;
+}
+
+.iconos img {
+    width: 40px;
+}
+
+.iconos a:hover {
+    color: #581386;
+}
+
+.derechos {
+    background-color: #e2e2e2;
+    display: flex;
+    gap: 700px;
+}
+
+.derechos p {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/*PAGINA PRODUCTOS*/
+
+.contenido {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.caja {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    transition: transform .2s;
+    margin-bottom: 50px;
+    shape-outside: rectangle(0, 0, 100%, 100%, 50px, 50px);
+}
+
+.caja img {
+    width: 220px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+.caja:hover {
+    transform: scale(1.2);
+}
+
+.caja h3 {
+    font-family: 'Signika Negative' sans-serif;
+    font-size: 1.3em;
+}
+
+.caja p {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.precio-antes {
+    padding: 0 !important;
+    margin-top: -5px !important;
+    font-size: .8em !important;
+    color: #c40808;
+}
+
+.precio-actual {
+    padding: 0;
+    margin-top: -5px !important;
+    font-size: 1.2em !important;
+    font-weight: 800 !important;
+}
+
+.descutn {
+    color: #581386;
+    font-size: 1.2em;
+    margin-left: 35px;
+    font-weight: bold;
+    width: 150px;
+    background-color: #ffa7ff9d;
+    border-radius: 8px;
+}
+
+/*PAGINA NOSOTROS*/
+
+.alma {
+    width: 100%;
+    height: 60vh;
+    margin: 20px auto;
+    background-color: rgba(161, 161, 161, 0.075);
+    color: var(--black);
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.alma img {
+    width: 300px;
+    float: right;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.Tit{
+    font-size: 1.5em;
+}
+
+.alma p{
+    padding: 10px 55px;
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+.historia{
+    width: 100%;
+    height: 65vh;
+    margin: 30px auto;
+    background-color: rgba(161, 161, 161, 0.075);
+    color: var(--black);
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.historia img{
+    width: 300px;
+    float: left;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.historia p{
+    padding: 10px 55px;
+    margin: 15px 10px;
+    font-size: 1.2em;
+}
+
+.valores{
+    width: 100%;
+    height: 45vh;
+    margin: 30px auto;
+    background-color: rgba(161, 161, 161, 0.075);
+    color: var(--black);
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.valores p{
+    padding: 10px 55px;
+    margin: 15px 10px;
+    font-size: 1.2em;
+}
+
+/*BOTON FLOTANTE*/
+
+.container-boton{
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 25px;
+    right: 25px;
+    padding: 8px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+/*PAGINA CONTACTOS*/
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: rgb(181, 91, 255);
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(181, 91, 255);
+    color: #000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: rgb(205, 143, 255);
+}
+
+.space{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
